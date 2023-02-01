@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Helvetica Now Text ';
+    src: local('Helvetica Now Text  Regular'), local('Helvetica-Now-Text--Regular'),
+        url('HelveticaNowText-Regular.woff2') format('woff2'),
+        url('HelveticaNowText-Regular.woff') format('woff'),
+        url('HelveticaNowText-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+img {
+   max-width: 100%;
+}
+
+header {
+    background-color: #0054A4 ;
+}
+
+.hero {
+    background-color: #0054A4;
+    height: 15vh;
+}
+
+body {
+    background-color: #E9F3FC ;
+}
+
+ul li {
+    list-style: none;
+}
+
+
+
+
+
+
+
+footer {
+    display: flex;
+    background-color: #0054A4;
+    height: 15vh;
+}
