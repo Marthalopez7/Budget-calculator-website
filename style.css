@@ -35,7 +35,18 @@ main {
     flex-wrap: wrap;
 }
 
-.career-options1 h2 {
+h2 {
+    color: #0054A4;
+    text-align: center;
+}
+
+.career-options1 {
+    background-color: #FFFFFF ;
+    color: #6D6E69;
+    margin: 1%;
+}
+
+/* .career-options1 h2 {
     color: #0054A4;
 }
 
@@ -48,19 +59,17 @@ main {
 .career-options1,
 .numbers1 {
     display: flex;
-    width: 50%;
-}
+    width: 95%;
+} */
 
-.career-options2,
+/* .career-options2,
 .numbers2 {
     background-color: #FFFFFF ;
     color: #6D6E69;
     display: flex;
     width: 45%;
-}
-.form h2 {
-    color: #0054A4;
-}
+} */
+
 
 .form {
     background-color: #FFFFFF;
@@ -69,21 +78,14 @@ main {
     padding: 1%;
 }
 
-.house-payment h2 {
-    color: #0054A4;
-}
 
 .house-payment {
     background-color: #FFFFFF;
     color: #6D6E69;
-    margin: 1%;
+    margin-top: 1%;
     padding: 1%;
 }
 
-.pay-deductions h2 {
-    color: #0054A4;
-    text-align: center;
-}
 
 .pay-deductions {
     background-color: #FFFFFF;
@@ -93,10 +95,7 @@ main {
     width: 90%;
 }
 
-.checkbook h2 {
-    color: #0054A4;
-    text-align: center;
-}
+
 
 .checkbook {
     background-color: #FFFFFF;
@@ -116,4 +115,19 @@ footer {
     justify-content: center;
     background-color: #0054A4;
     height: 15vh;
+}
+
+#career-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+#career-list li {
+    width: 45%;
+}
+
+#career-list span.salary {
+    float: right;
 }
