@@ -14,7 +14,9 @@
         </div>
     </header>
     <div class="hero">
-        
+        <div class="hero-content">
+            <h1>Welcome,</h1>
+        </div>
     </div>
     <main>
            <div class="career-options1">
@@ -25,16 +27,27 @@
            </div>
            
         </div>  
-        <div class="form">
+        
+        <div class="form" id="form1">
             <h2>Please Complete The Following:</h2>
-            <h3>1.) What is your career option?</h3>
-            <h3>2.) What is your gross annual income (GAI)?</h3>
-            <h3>3.) What is your gross monthly income?
-               <em>(This is you Gross Annual Income divided by 12)</em> </h3>
-               <!-- textbox for responses -->
-            <!-- <input type="text" placeholder="Accountant">
-            <input type="text" placeholder="$55,650.00">
-            <input type="text" placeholder="$4,637.5"> -->
+            <h3 id="co">1.) What is your career option?</h3>
+            <h3 id="income">2.) What is your gross annual income (GAI)?</h3>
+            <h3>3.) What is your gross monthly income? 
+            <em>(This is you Gross Annual Income divided by 12)</em> = <span id="gmi"></span></h3>         
+        </div>
+        <div class="pay-deductions">
+            <h2>Pay Period Deductions</h2>
+            <h4>(Click on job above)</h4>
+            <ul>
+                <li>Federal Taxes = <span id='ft'></span> </li>
+                <li>State Taxes = <span id="st"></span> </li>
+                <li>Social Security = <span id="ss"></span></li>
+                <li>Medicare = <span id="med"></span></li>
+                <li>State Disability = <span id="sd"></span></li>
+                <li>Retirement Investment = <span id="rt"></span></li>
+                <li>Medical Insurance = <span id="mi"></span></li>
+            </ul>
+           <!-- numbers and calculations here -->
         </div>
         <div class="house-payment">
             <h2>Calculate How Much of a House Payment  You Can Afford:</h2>
@@ -42,29 +55,18 @@
             <!-- $__________ x 0.33 = $_______
                 (#3 above)(max monthly house payment)  -->
         </div>
-        <div class="pay-deductions">
-            <h2>Pay Period Deductions</h2>
-            <ul>
-                <li>Federal Taxes</li>
-                <li>State Taxes</li>
-                <li>Social Security</li>
-                <li>Medicare</li>
-                <li>State Disability</li>
-                <li>Retirement</li>
-                <li>Investment</li>
-                <li>Medical Insurance</li>
-            </ul>
-           <!-- numbers and calculations here -->
-        </div>
+        
         <div class="checkbook">
             <h2>How to Balance a Checkbook</h2>
-            <p>You will need to fill in four important parts of the check register 
-            </p>
+            <h4>You will need to fill in four important parts of the check register 
+            </h4>
             <h3>1. Date: Pretend it's the first day of the month (or use today's date). </h3>
             <h3>2. Description: Enter the name or description of the transaction</h3>
             <h3>3. Payment column ( or Deposit column (+)</h3>
             <h3>4. Balance: Either subtract (if payment) or add (if deposit) to the ** previous balance</h3>
-            <!-- table here -->
+            <table>
+                <!-- Table data -->
+            </table>
             <h4>Key</h4>
             <ul>
                 <li>AD = Automatic Deposit</li>

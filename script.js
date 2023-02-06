@@ -72,10 +72,41 @@ const data = [
 ]
 
 const careerList = document.getElementById('career-list');
+const fedtax =  document.getElementById('ft');
+const statetax = document.getElementById('st');
+const socSec = document.getElementById('ss');
+const medi = document.getElementById('med');
+const stateDis = document.getElementById('sd');
+const reti = document.getElementById('rt');
+const medInsur = document.getElementById('mi');
+const co = document.getElementById('co');
+const income = document.getElementById('income');
+const gmi = document.getElementById('gmi');
 
 for(job of data){
     let element = document.createElement('li');
     element.innerHTML = `<span class="title">${job[0]}</span> <span class="salary">$${job[1]}.00</span>`;
-    
+    element.addEventListener('click', (e) => selectjob(e.target))
+    element.setAttribute('salary', job[1]);
     careerList.appendChild(element);
+}
+
+function monthlyIncome(salary) {
+    gmi.innerText = salary / 12
+}
+
+function selectjob(element){
+element.classList.toggle('selected')
+calculate(element.getAttribute('salary'))
+monthlyIncome(element.getAttribute('salary'))
+}
+
+function calculate(salary){
+fedtax.innerText= salary * 0.12
+statetax.innerText = salary * 0.07
+socSec.innerText = salary * 0.062 
+medi.innerText = salary * 0.0145
+stateDis.innerText = salary * 0.01 
+reti.innerText = salary * 0.05 
+medInsur.innerText = salary += 180
 }
