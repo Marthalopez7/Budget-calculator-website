@@ -116,3 +116,12 @@ medInsur.innerText = salary += 180
 function housePayment(salary){
     housePay.innerText = salary * 0.33
 }
+
+// function currentbalance(balance) {
+//     let startingBalance = 0;
+//     let calculateBalance = 0;
+
+//     if(startingBalance && calculateBalance){
+//         if(startingBalance == )
+//     }
+// }
