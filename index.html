@@ -50,8 +50,7 @@
         </div>
         <div class="house-payment">
             <h2>Calculate How Much of a House Payment  You Can Afford:</h2>
-            <h3>Gross Monthly Income (#2 above) x 33% (0.33) Maximum Monthly House Payment </h3>
-            <span></span>
+            <h3>Gross Monthly Income (#2 above) x 33% (0.33) Maximum Monthly House Payment = <span id="hp"></span> </h3>
             <!-- $__________ x 0.33 = $_______
                 (#3 above)(max monthly house payment)  -->
         </div>
@@ -64,7 +63,7 @@
             <h3>2. Description: Enter the name or description of the transaction</h3>
             <h3>3. Payment column ( or Deposit column (+)</h3>
             <h3>4. Balance: Either subtract (if payment) or add (if deposit) to the ** previous balance</h3>
-            <table id="table">
+            <table id="table" style="overflow-x:auto;">
                 <thead>
                     <tr>
                          <th>Number or Code </th>
@@ -74,48 +73,48 @@
                          <th>Deposit Credit (+) </th>
                          <th>$ Balance </th>
                     </tr>
-                    <tbody>
+                </thead>
+                    <tbody id="group1">
                         <tr>
                              <td><input type="number"></td>
                              <td><input type="number"></td>
-                             <td><input type="text" placeholder="Paycheck Savings"></td>
+                             <td><input type="number"></td>
                              <td><input type="number"></td>
                              <td><input type="number"></td>
                              <td><input type="number"></td>
                         </tr>
                     </tbody>
-                    <tbody>
+                    <tbody id="group2">
                         <tr>
                         <td><input type="number"></td>
                              <td><input type="number"></td>
-                             <td><input type="text" placeholder="Paycheck Savings"></td>
+                             <td><input type="number"></td>
                              <td><input type="number"></td>
                              <td><input type="number"></td>
                              <td><input type="number"></td>
                     </tr>
                     </tbody>
-                    <tbody>
+                    <tbody id="group3">
                         <tr>
-                        <td><input type="number"></td>
-                             <td><input type="number"></td>
+                            <td><input type="text" placeholder="Paycheck Savings"></td> 
                              <td><input type="text" placeholder="Paycheck Savings"></td>
-                             <td><input type="number"></td>
-                             <td><input type="number"></td>
-                             <td><input type="number"></td>
+                             <td><input type="text" placeholder="Paycheck Savings"></td>
+                             <td><input type="text" placeholder="Paycheck Savings"></td>
+                             <td><input type="text" placeholder="Paycheck Savings"></td>
+                             <td><input type="text" placeholder="Paycheck Savings"></td>
                     </tr>
                     </tbody>
                     <tbody>
                        <tr>
                         <td><input type="number"></td>
                              <td><input type="number"></td>
-                             <td><input type="text" placeholder="Paycheck Savings"></td>
+                             <td><input type="number"></td>
                              <td><input type="number"></td>
                              <td><input type="number"></td>
                              <td><input type="number"></td>
                               
                     </tr> 
                     </tbody>
-                </thead>
                 <input type="button" value="submit">
             </table>
             <h4>Key</h4>

@@ -1,4 +1,4 @@
-const Career = [
+const data = [
     [ 'Accountant', 55650 ],
     [ 'Advance Tractor/Trailer Driver', 53550 ],
     [ 'Agricultural Engineer', 56700 ],
@@ -82,8 +82,9 @@ const medInsur = document.getElementById('mi');
 const co = document.getElementById('co');
 const income = document.getElementById('income');
 const gmi = document.getElementById('gmi');
+const housePay = document.getElementById('hp');
 
-for(job of Career){
+for(job of data){
     let element = document.createElement('li');
     element.innerHTML = `<span class="title">${job[0]}</span> <span class="salary">$${job[1]}.00</span>`;
     element.addEventListener('click', (e) => selectjob(e.target))
@@ -99,6 +100,7 @@ function selectjob(element){
 element.classList.toggle('selected')
 calculate(element.getAttribute('salary'))
 monthlyIncome(element.getAttribute('salary'))
+housePayment(element.getAttribute('salary'))
 }
 
 function calculate(salary){
@@ -111,3 +113,6 @@ reti.innerText = salary * 0.05
 medInsur.innerText = salary += 180
 }
 
+function housePayment(salary){
+    housePay.innerText = salary * 0.33
+}

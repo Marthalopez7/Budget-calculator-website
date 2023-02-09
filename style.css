@@ -56,8 +56,6 @@ h2 {
 }
 
 .career-options1 {
-    display: flex;
-    align-items: center;
     background-color: #F2B3D6;
     margin: 1%;
     width: 98%;
@@ -158,4 +156,37 @@ footer {
 
 li.selected, li:hover {
     background-color: lavender;
+}
+
+@media screen and (max-width: 640px) {
+    header img {
+        width: 35%;
+    }
+
+    #career-list li {
+        width: 90%;
+    }
+
+    .form {
+        width: 90%;
+        margin-right: 11%;
+    }
+
+    .form h3 {
+        width: 50%;
+        margin-left:5%;
+    }
+
+    .pay-deductions  {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .house-payment {
+        margin-bottom: 1%;
+    }
+
+    footer img {
+        width: 35%;
+    }
 }
