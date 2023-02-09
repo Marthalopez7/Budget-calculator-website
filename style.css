@@ -30,6 +30,7 @@ header {
 
 header img {
     width: 10%;
+    margin: 1%;
 }
 
 body {
@@ -85,15 +86,24 @@ span.salary{
     width: 30%;
 }
 
-
+.form,
+.pay-deductions {
+    width: 50%;
+    margin-left: 12%;
+}
 
 .house-payment {
     background-color: #F2B3D6;
     margin-top: 1%;
     padding: 1%;
     border-radius: 5%;
+   width: 90%;
+   margin-left: 5%;
 }
 
+.house-payment h3 {
+    text-align: center;
+}
 
 .pay-deductions {
     background-color: #F2B3D6;
@@ -112,6 +122,11 @@ span.salary{
     margin: 1%;
     padding: 1%;
     width: 90%;
+    margin-left: 5%;
+}
+
+table {
+    margin-left: 15%;
 }
 
 footer img {

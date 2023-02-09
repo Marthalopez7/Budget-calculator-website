@@ -1,4 +1,4 @@
-const data = [
+const Career = [
     [ 'Accountant', 55650 ],
     [ 'Advance Tractor/Trailer Driver', 53550 ],
     [ 'Agricultural Engineer', 56700 ],
@@ -83,7 +83,7 @@ const co = document.getElementById('co');
 const income = document.getElementById('income');
 const gmi = document.getElementById('gmi');
 
-for(job of data){
+for(job of Career){
     let element = document.createElement('li');
     element.innerHTML = `<span class="title">${job[0]}</span> <span class="salary">$${job[1]}.00</span>`;
     element.addEventListener('click', (e) => selectjob(e.target))
@@ -110,3 +110,4 @@ stateDis.innerText = salary * 0.01
 reti.innerText = salary * 0.05 
 medInsur.innerText = salary += 180
 }
+

@@ -47,11 +47,11 @@
                 <li>Retirement Investment = <span id="rt"></span></li>
                 <li>Medical Insurance = <span id="mi"></span></li>
             </ul>
-           <!-- numbers and calculations here -->
         </div>
         <div class="house-payment">
             <h2>Calculate How Much of a House Payment  You Can Afford:</h2>
             <h3>Gross Monthly Income (#2 above) x 33% (0.33) Maximum Monthly House Payment </h3>
+            <span></span>
             <!-- $__________ x 0.33 = $_______
                 (#3 above)(max monthly house payment)  -->
         </div>
@@ -64,8 +64,59 @@
             <h3>2. Description: Enter the name or description of the transaction</h3>
             <h3>3. Payment column ( or Deposit column (+)</h3>
             <h3>4. Balance: Either subtract (if payment) or add (if deposit) to the ** previous balance</h3>
-            <table>
-                <!-- Table data -->
+            <table id="table">
+                <thead>
+                    <tr>
+                         <th>Number or Code </th>
+                         <th>Date </th>
+                         <th>Transaction Description </th>
+                         <th>Payment, Fee, Withdraw (-) </th>
+                         <th>Deposit Credit (+) </th>
+                         <th>$ Balance </th>
+                    </tr>
+                    <tbody>
+                        <tr>
+                             <td><input type="number"></td>
+                             <td><input type="number"></td>
+                             <td><input type="text" placeholder="Paycheck Savings"></td>
+                             <td><input type="number"></td>
+                             <td><input type="number"></td>
+                             <td><input type="number"></td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                        <td><input type="number"></td>
+                             <td><input type="number"></td>
+                             <td><input type="text" placeholder="Paycheck Savings"></td>
+                             <td><input type="number"></td>
+                             <td><input type="number"></td>
+                             <td><input type="number"></td>
+                    </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                        <td><input type="number"></td>
+                             <td><input type="number"></td>
+                             <td><input type="text" placeholder="Paycheck Savings"></td>
+                             <td><input type="number"></td>
+                             <td><input type="number"></td>
+                             <td><input type="number"></td>
+                    </tr>
+                    </tbody>
+                    <tbody>
+                       <tr>
+                        <td><input type="number"></td>
+                             <td><input type="number"></td>
+                             <td><input type="text" placeholder="Paycheck Savings"></td>
+                             <td><input type="number"></td>
+                             <td><input type="number"></td>
+                             <td><input type="number"></td>
+                              
+                    </tr> 
+                    </tbody>
+                </thead>
+                <input type="button" value="submit">
             </table>
             <h4>Key</h4>
             <ul>
