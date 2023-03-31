@@ -70,6 +70,12 @@ const data = [
     [ 'Welder/Metal Specialist', 47250 ],
     [ 'Wind EnergyTechnician', 56700 ]
 ]
+class Job {
+    constructor(name, length) {
+        this.name = name
+        this.length = length
+    }
+}
 
 const careerList = document.getElementById('career-list');
 const fedtax =  document.getElementById('ft');
@@ -84,6 +90,9 @@ const income = document.getElementById('income');
 const gmi = document.getElementById('gmi');
 const housePay = document.getElementById('hp');
 
+const table = document.querySelector('.table')
+
+const jobList = new Job ()
 for(job of data){
     let element = document.createElement('li');
     element.innerHTML = `<span class="title">${job[0]}</span> <span class="salary">$${job[1]}.00</span>`;
@@ -110,12 +119,17 @@ socSec.innerText = salary * 0.062
 medi.innerText = salary * 0.0145
 stateDis.innerText = salary * 0.01 
 reti.innerText = salary * 0.05 
-medInsur.innerText = salary += 180
+medInsur.innerText = salary + 180
 }
 
 function housePayment(salary){
     housePay.innerText = salary * 0.33
 }
+
+// function showjob(salary) {
+//      co.innerText = selectjob(e.target) 
+//      co.innerText = job.name
+// }
 
 // function currentbalance(balance) {
 //     let startingBalance = 0;
